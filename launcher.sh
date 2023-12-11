@@ -1,0 +1,1 @@
+pydm --hide-nav-bar --hide-menu-bar --hide-status-bar /home/fphysics/zack/workspace/F2_dashboard/F2_dashboard.py
