@@ -1477,8 +1477,8 @@ color: rgb(255,255,255);
         <stringlist>
          <string>edm -x /usr/local/facet/tools/edm/display/misc/facet_userdev.edl</string>
          <string>edm -x /usr/local/facet/tools/edm/display/misc/watcher_facet.edl</string>
-         <string>bash /home/fphysics/zack/workspace/F2_CUDs/manager/launcher.sh</string>
-         <string>python /home/fphysics/zack/workspace/F2_CUDs/launch.py mini_klys</string>
+         <string>bash /usr/local/facet/tools/python/F2-CUDs/manager/launcher.sh</string>
+         <string>python /usr/local/facet/tools/python/F2-CUDs/launch.py mini_klys</string>
          <string>/usr/local/facet/physics/nc_mps_gui/nc_mps_gui.bash</string>
         </stringlist>
        </property>
