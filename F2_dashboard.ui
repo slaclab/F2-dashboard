@@ -1464,12 +1464,48 @@ color: rgb(255,255,255);
        <property name="text">
         <string>Operator Tools</string>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string/>
+       </property>
+       <property name="PyDMIcon" stdset="0">
+        <string/>
+       </property>
+       <property name="showConfirmDialog" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="runCommandsInFullShell" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="confirmMessage" stdset="0">
+        <string>Are you sure you want to proceed?</string>
+       </property>
+       <property name="environmentVariables" stdset="0">
+        <string/>
+       </property>
+       <property name="showIcon" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="redirectCommandOutput" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="allowMultipleExecutions" stdset="0">
+        <bool>false</bool>
+       </property>
        <property name="titles" stdset="0">
         <stringlist>
          <string>User Dev</string>
          <string>Watcher Processes</string>
          <string>CUD Manager</string>
-         <string>Mini Klystron Display</string>
+         <string>WFH CUD</string>
          <string>MPS GUI</string>
         </stringlist>
        </property>
@@ -1478,9 +1514,18 @@ color: rgb(255,255,255);
          <string>edm -x /usr/local/facet/tools/edm/display/misc/facet_userdev.edl</string>
          <string>edm -x /usr/local/facet/tools/edm/display/misc/watcher_facet.edl</string>
          <string>bash /usr/local/facet/tools/python/F2-CUDs/manager/launcher.sh</string>
-         <string>python /usr/local/facet/tools/python/F2-CUDs/launch.py mini_klys</string>
+         <string>python /usr/local/facet/tools/python/F2-CUDs/launch.py wfh</string>
          <string>/usr/local/facet/physics/nc_mps_gui/nc_mps_gui.bash</string>
         </stringlist>
+       </property>
+       <property name="passwordProtected" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="password" stdset="0">
+        <string/>
+       </property>
+       <property name="protectedPassword" stdset="0">
+        <string/>
        </property>
       </widget>
      </item>
