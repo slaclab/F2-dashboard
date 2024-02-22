@@ -1514,7 +1514,7 @@ color: rgb(255,255,255);
          <string>edm -x /usr/local/facet/tools/edm/display/misc/facet_userdev.edl</string>
          <string>edm -x /usr/local/facet/tools/edm/display/misc/watcher_facet.edl</string>
          <string>bash /usr/local/facet/tools/python/F2-CUDs/manager/launcher.sh</string>
-         <string>python /usr/local/facet/tools/python/F2-CUDs/launch.py wfh</string>
+         <string>python /usr/local/facet/tools/python/F2-CUDs/launcher.py wfh</string>
          <string>/usr/local/facet/physics/nc_mps_gui/nc_mps_gui.bash</string>
         </stringlist>
        </property>
