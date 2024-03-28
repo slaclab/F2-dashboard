@@ -121,6 +121,7 @@ class F2_dashboard(Display):
 
         if gethostname() not in ACR_WORKSTATIONS:
             self.ui.start_matlab_server.setEnabled(False)
+            self.ui.start_matlab_server.setStyleSheet("color:rgba(255,255,255,120);")
 
         return
 
