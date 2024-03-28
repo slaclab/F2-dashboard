@@ -120,7 +120,7 @@ class F2_dashboard(Display):
         ind_LI18.setGeometry(0,0,92,26)
 
         if gethostname() not in ACR_WORKSTATIONS:
-            self.ui.start_matlab_server.SetEnabled(False)
+            self.ui.start_matlab_server.setEnabled(False)
 
         return
 
