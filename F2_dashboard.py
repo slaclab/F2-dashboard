@@ -2,6 +2,7 @@ import os, sys
 from sys import exit
 from epics import caput, caget
 from time import sleep
+from socket import gethostname
 
 import pydm
 from pydm import Display
@@ -79,6 +80,13 @@ STYLE_TEXT_WHITE = """
 color: rgb(255,255,255);
 """
 
+ACR_WORKSTATIONS = [
+    'opi20',
+    'opi21',
+    'opi22',
+    'opi23',
+    ]
+
 class F2_dashboard(Display):
 
     def __init__(self, parent=None, args=None):
@@ -110,6 +118,9 @@ class F2_dashboard(Display):
             )
         ind_LI11.setGeometry(0,0,92,26)
         ind_LI18.setGeometry(0,0,92,26)
+
+        if gethostname() not in ACR_WORKSTATIONS:
+            self.ui.start_matlab_server.SetEnalbed(False)
 
         return
 

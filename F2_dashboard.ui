@@ -1360,6 +1360,36 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
      <property name="spacing">
       <number>5</number>
      </property>
+     <item row="10" column="1">
+      <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="text">
+        <string>SCORE</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="commands" stdset="0">
+        <stringlist>
+         <string>/usr/local/facet/tools/script/HLAWrap xterm -e /usr/local/facet/physics/score/score_facet.bash FACET MCCO</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
      <item row="5" column="1">
       <widget class="PyDMShellCommand" name="PyDMShellCommand_7">
        <property name="toolTip">
@@ -1414,36 +1444,6 @@ color: rgb(255,255,255);
        </property>
        <property name="text">
         <string>Shortcuts</string>
-       </property>
-      </widget>
-     </item>
-     <item row="18" column="1">
-      <widget class="PyDMPushButton" name="MPS_unlatch">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(144,194,255);</string>
-       </property>
-       <property name="text">
-        <string>MPS Unlatch All</string>
-       </property>
-       <property name="alarmSensitiveBorder" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>IOC:SYS1:MP01:UNLATCHALL</string>
-       </property>
-       <property name="pressValue" stdset="0">
-        <string>1</string>
-       </property>
-       <property name="releaseValue" stdset="0">
-        <string>0</string>
        </property>
       </widget>
      </item>
@@ -1526,36 +1526,6 @@ color: rgb(255,255,255);
        </property>
        <property name="protectedPassword" stdset="0">
         <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="1">
-      <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-       <property name="text">
-        <string>SCORE</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="commands" stdset="0">
-        <stringlist>
-         <string>/usr/local/facet/tools/script/HLAWrap xterm -e /usr/local/facet/physics/score/score_facet.bash FACET MCCO</string>
-        </stringlist>
        </property>
       </widget>
      </item>
@@ -1667,7 +1637,6 @@ color: rgb(255,255,255);
          <string>Schottky Scan</string>
          <string>RF Phase Scans</string>
          <string>S20 Config</string>
-         <string>Watcher Processes</string>
          <string>All Physics Apps...</string>
         </stringlist>
        </property>
@@ -1697,6 +1666,39 @@ color: rgb(255,255,255);
        </property>
        <property name="protectedPassword" stdset="0">
         <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="PyDMShellCommand" name="start_matlab_server">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Start MATLAB server</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string>Initialze the ACR MATLAB server for faster app launching (only availble on ACR workstations)</string>
+       </property>
+       <property name="commands" stdset="0">
+        <stringlist>
+         <string>/usr/local/facet/tools/matlabTNG/applauncher_start.sh</string>
+        </stringlist>
        </property>
       </widget>
      </item>
@@ -4118,11 +4120,6 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMPushButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.pushbutton</header>
   </customwidget>
   <customwidget>
    <class>PyDMShellCommand</class>
