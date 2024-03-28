@@ -189,7 +189,7 @@ class F2FeedbackToggle(QFrame):
         feedback_on = (int(abs(new_value)) >> (self.bit)) & 1
 
         on_style = STYLE_TEXT_GREEN if feedback_on else STYLE_TEXT_WHITE
-        off_style = STYLE_TEXT_RED if feedback_on else STYLE_TEXT_WHITE
+        off_style = STYLE_TEXT_RED if not feedback_on else STYLE_TEXT_WHITE
 
         self.toggle_on.setDown(feedback_on)
         self.toggle_on.setEnabled(not feedback_on)
