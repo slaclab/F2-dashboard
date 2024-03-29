@@ -87,6 +87,22 @@ ACR_WORKSTATIONS = [
     'opi23',
     ]
 
+STYLE_BRD_GREEN = """
+QFrame{
+border-color: rgb(80,255,120);
+border-width: 2px;
+border-style: solid;
+}
+"""
+
+STYLE_BRD_RED = """
+QFrame{
+border-color: rgb(220,0,0);
+border-width: 2px;
+border-style: solid;
+}
+"""
+
 class F2_dashboard(Display):
 
     def __init__(self, parent=None, args=None):
@@ -159,6 +175,8 @@ class F2FeedbackToggle(QFrame):
         self.toggle_off = QPushButton('OFF')
         self.status = PyDMByteIndicator()
 
+        self.setStyleSheet(STYLE_BRD_GREEN)
+
         self.FB_state = PyDMChannel(address=PV_FB_CONTROL, value_slot=self.set_button_enable_states)
         self.FB_state.connect()
 
@@ -172,7 +190,7 @@ class F2FeedbackToggle(QFrame):
         L.addWidget(self.toggle_on)
         L.addWidget(self.toggle_off)
         L.setSpacing(1)
-        L.setContentsMargins(2,2,2,2)
+        L.setContentsMargins(0,0,0,0)
         self.setLayout(L)
 
     def enable_fb(self):
@@ -190,6 +208,9 @@ class F2FeedbackToggle(QFrame):
 
         on_style = STYLE_TEXT_GREEN if feedback_on else STYLE_TEXT_WHITE
         off_style = STYLE_TEXT_RED if not feedback_on else STYLE_TEXT_WHITE
+
+        border = STYLE_BRD_GREEN if feedback_on else STYLE_BRD_RED
+        self.setStyleSheet(border)
 
         self.toggle_on.setDown(feedback_on)
         self.toggle_on.setEnabled(not feedback_on)
