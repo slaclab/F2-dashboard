@@ -7,8 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>840</height>
+    <height>900</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
   </property>
   <property name="font">
    <font>
@@ -1710,8 +1716,14 @@ color: rgb(255,255,255);
       <x>225</x>
       <y>220</y>
       <width>565</width>
-      <height>581</height>
+      <height>640</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>110</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">QFrame{
@@ -1777,7 +1789,971 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
      <property name="spacing">
       <number>5</number>
      </property>
-     <item row="13" column="1">
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_55">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="32" column="2">
+      <widget class="QLabel" name="label_54">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>E = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="QLabel" name="label_22">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>E</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="30" column="1" colspan="2">
+      <widget class="QLabel" name="label_21">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BC20 Energy</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>SIOC:SYS1:ML00:AO898</string>
+       </property>
+      </widget>
+     </item>
+     <item row="33" column="3">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="28" column="1" colspan="7">
+      <widget class="Line" name="line_16">
+       <property name="styleSheet">
+        <string notr="true">color: rgba(255, 255, 255, 128);</string>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="29" column="1" colspan="2">
+      <widget class="QLabel" name="label_83">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>L3 → BC20</string>
+       </property>
+      </widget>
+     </item>
+     <item row="29" column="7">
+      <widget class="QLabel" name="label_26">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>E</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="1">
+      <widget class="QLabel" name="label_57">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="4">
+      <widget class="QLabel" name="label_62">
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>AU</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="22" column="1" colspan="2">
+      <widget class="QLabel" name="label_20">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BC14 BLen</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="8">
+      <widget class="Line" name="line_4">
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="24" column="3">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="15" column="1" colspan="2">
+      <widget class="QLabel" name="label_18">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BC11 BLen</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="23" column="2">
+      <widget class="QLabel" name="label_32">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>σz =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="2">
+      <widget class="QLabel" name="label_51">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>σz =</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="3" colspan="2">
+      <widget class="QWidget" name="cont_BC14E" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="4">
+      <widget class="QLabel" name="label_60">
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>AU</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLabel" name="label_56">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>SIOC:SYS1:ML00:AO895</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_52">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>E = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="22" column="3" colspan="2">
+      <widget class="QWidget" name="cont_BC14BL" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>SIOC:SYS1:ML00:AO858</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="8">
+      <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Beam-based Longitudinal Feedbacks</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="1" colspan="2">
+      <widget class="QLabel" name="label_19">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BC14 Energy</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_84">
+       <property name="minimumSize">
+        <size>
+         <width>5</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>5</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLabel" name="label_58">
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>keV</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="2">
+      <widget class="QLabel" name="label_34">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>E = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="1">
+      <widget class="QLabel" name="label_79">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="30" column="3" colspan="2">
+      <widget class="QWidget" name="cont_BC20E" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="32" column="4">
+      <widget class="QLabel" name="label_63">
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>MeV</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QLabel" name="label_16">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>DL10 Energy</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="1" colspan="7">
+      <widget class="Line" name="line_15">
+       <property name="styleSheet">
+        <string notr="true">color: rgba(255, 255, 255, 128);</string>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="1" colspan="2">
+      <widget class="QLabel" name="label_82">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>L2 → BC14</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>SIOC:SYS1:ML01:AO221</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="1">
+      <widget class="QLabel" name="label_78">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>set</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="3" colspan="2">
+      <widget class="QWidget" name="cont_BC11E" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="3" colspan="2">
+      <widget class="QWidget" name="cont_BC11BL" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" colspan="7">
+      <widget class="Line" name="line_5">
+       <property name="styleSheet">
+        <string notr="true">color: rgba(255, 255, 255, 128);</string>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1" colspan="2">
+      <widget class="QLabel" name="label_17">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BC11 Energy</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="4">
+      <widget class="QLabel" name="label_61">
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>MeV</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="7">
+      <widget class="QLabel" name="label_25">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>E</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3" colspan="2">
+      <widget class="QWidget" name="cont_DL10E" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="32" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>SIOC:SYS1:ML00:AO895</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="QLabel" name="label_35">
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>E = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="3">
       <spacer name="verticalSpacer_3">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
@@ -1790,36 +2766,111 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
        </property>
       </spacer>
      </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="label_10">
+     <item row="14" column="4">
+      <widget class="QLabel" name="label_59">
+       <property name="maximumSize">
+        <size>
+         <width>35</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <pointsize>10</pointsize>
+         <italic>false</italic>
         </font>
        </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
        <property name="text">
-        <string>BPM 11333 X</string>
+        <string>keV</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
-     <item row="22" column="3" rowspan="5" colspan="2">
+     <item row="11" column="1" colspan="2">
+      <widget class="QLabel" name="label_81">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>L1 → BC11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="23" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>SIOC:SYS1:ML01:AO247</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="7">
+      <widget class="QLabel" name="label_24">
+       <property name="maximumSize">
+        <size>
+         <width>15</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>E</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QLabel" name="label_80">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>L0 → DL10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="29" column="5" rowspan="5" colspan="2">
       <widget class="PyDMWaveformPlot" name="plot_BC20">
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>120</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>120</height>
+         <height>140</height>
         </size>
        </property>
        <property name="toolTip">
@@ -1864,123 +2915,12 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
        </property>
       </widget>
      </item>
-     <item row="15" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_9">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>25</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>105</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>-00.0 mm</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-       <property name="precision" stdset="0">
-        <number>1</number>
-       </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="alarmSensitiveContent" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="alarmSensitiveBorder" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="PyDMToolTip" stdset="0">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>BPMS:LI14:801:X1H</string>
-       </property>
-       <property name="enableRichText" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_8">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>25</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>105</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>-00.0 mm</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-       <property name="precision" stdset="0">
-        <number>1</number>
-       </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="alarmSensitiveBorder" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>BPMS:LI11:333:X1H</string>
-       </property>
-      </widget>
-     </item>
-     <item row="15" column="3" rowspan="6" colspan="2">
+     <item row="19" column="5" rowspan="9" colspan="2">
       <widget class="PyDMWaveformPlot" name="plot_BC14">
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>120</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>120</height>
+         <height>140</height>
         </size>
        </property>
        <property name="toolTip">
@@ -2025,778 +2965,12 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
        </property>
       </widget>
      </item>
-     <item row="25" column="1">
-      <widget class="QWidget" name="cont_BC20E" native="true">
-       <property name="minimumSize">
-        <size>
-         <width>110</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-background-color: rgba(255, 255, 255, 0);
-}
-PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="0" colspan="6">
-      <widget class="Line" name="line">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="19" column="1">
-      <widget class="QWidget" name="cont_BC14BL" native="true">
-       <property name="minimumSize">
-        <size>
-         <width>110</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-background-color: rgba(255, 255, 255, 0);
-}
-PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QWidget" name="cont_DL10E" native="true">
-       <property name="minimumSize">
-        <size>
-         <width>110</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-background-color: rgba(255, 255, 255, 0);
-}
-PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="5">
-      <widget class="QLabel" name="label_22">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-         <weight>75</weight>
-         <italic>true</italic>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>E</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="5" rowspan="2">
-      <widget class="PyDMDrawingLine" name="PyDMDrawingLine">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-       </property>
-       <property name="brush" stdset="0">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </property>
-       <property name="penColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="rotation" stdset="0">
-        <double>-90.000000000000000</double>
-       </property>
-       <property name="arrowEndPoint" stdset="0">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="14" column="0" colspan="6">
-      <widget class="Line" name="line_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="3" rowspan="6" colspan="2">
-      <widget class="PyDMWaveformPlot" name="plot_BC11">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>120</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>120</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="yAxes">
-        <stringlist>
-         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
-        </stringlist>
-       </property>
-       <property name="mouseEnabledX" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="mouseEnabledY" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="maxRedrawRate" stdset="0">
-        <number>10</number>
-       </property>
-       <property name="curves">
-        <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;BPMS:LI11:333:XHSTBRDSP&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
-        </stringlist>
-       </property>
-       <property name="autoRangeX">
-        <bool>false</bool>
-       </property>
-       <property name="minXRange">
-        <double>1800.000000000000000</double>
-       </property>
-       <property name="maxXRange">
-        <double>2800.000000000000000</double>
-       </property>
-       <property name="autoRangeY">
-        <bool>false</bool>
-       </property>
-       <property name="minYRange">
-        <double>-2.200000000000000</double>
-       </property>
-       <property name="maxYRange">
-        <double>2.200000000000000</double>
-       </property>
-      </widget>
-     </item>
-     <item row="17" column="2">
-      <widget class="PyDMByteIndicator" name="ind_BC14E">
-       <property name="minimumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML00:AO856</string>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="shift" stdset="0">
-        <number>1</number>
-       </property>
-      </widget>
-     </item>
-     <item row="17" column="1">
-      <widget class="QWidget" name="cont_BC14E" native="true">
-       <property name="minimumSize">
-        <size>
-         <width>110</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-background-color: rgba(255, 255, 255, 0);
-}
-PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-      </widget>
-     </item>
-     <item row="22" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_10">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>25</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>105</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>-00.0 mm</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-       <property name="precision" stdset="0">
-        <number>1</number>
-       </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="alarmSensitiveBorder" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>BPMS:LI20:2445:X1H</string>
-       </property>
-      </widget>
-     </item>
-     <item row="17" column="5" rowspan="4">
-      <widget class="PyDMDrawingLine" name="PyDMDrawingLine_3">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-       </property>
-       <property name="brush" stdset="0">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </property>
-       <property name="penColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="rotation" stdset="0">
-        <double>-90.000000000000000</double>
-       </property>
-       <property name="arrowEndPoint" stdset="0">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_7">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>25</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>105</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>-00.0 mm</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-       <property name="precision" stdset="0">
-        <number>1</number>
-       </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="alarmSensitiveBorder" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>BPMS:IN10:731:X1H</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0" colspan="6">
-      <widget class="Line" name="line_9">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="15" column="0">
-      <widget class="QLabel" name="label_11">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>BPM 14801 X</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="15" column="5">
-      <widget class="QLabel" name="label_25">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-         <weight>75</weight>
-         <italic>true</italic>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>E</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="17" column="0">
-      <widget class="QLabel" name="label_19">
-       <property name="maximumSize">
-        <size>
-         <width>90</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>BC14 Energy</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0" colspan="6">
-      <widget class="Line" name="line_4">
-       <property name="frameShadow">
-        <enum>QFrame::Plain</enum>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="1">
-      <widget class="QWidget" name="cont_BC11BL" native="true">
-       <property name="minimumSize">
-        <size>
-         <width>110</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-background-color: rgba(255, 255, 255, 0);
-}
-PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="0">
-      <widget class="QLabel" name="label_18">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>BC11 BLen</string>
-       </property>
-      </widget>
-     </item>
-     <item row="22" column="0">
-      <widget class="QLabel" name="label_15">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>BPM 202445 X</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_8">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>BPM 10731 X</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_16">
-       <property name="maximumSize">
-        <size>
-         <width>90</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>DL10 Energy</string>
-       </property>
-      </widget>
-     </item>
-     <item row="25" column="0">
-      <widget class="QLabel" name="label_21">
-       <property name="maximumSize">
-        <size>
-         <width>90</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>BC20 Energy</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="5" rowspan="4">
-      <widget class="PyDMDrawingLine" name="PyDMDrawingLine_2">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-       </property>
-       <property name="brush" stdset="0">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </property>
-       <property name="penColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="rotation" stdset="0">
-        <double>-90.000000000000000</double>
-       </property>
-       <property name="arrowEndPoint" stdset="0">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0" colspan="6">
-      <widget class="QLabel" name="label_14">
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-         <weight>75</weight>
-         <italic>true</italic>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Spectrometer BPMs and Longitudinal Feedback Controls</string>
-       </property>
-      </widget>
-     </item>
-     <item row="19" column="0">
-      <widget class="QLabel" name="label_20">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>BC14 BLen</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="2">
-      <widget class="PyDMByteIndicator" name="ind_DL10E">
-       <property name="minimumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML00:AO856</string>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="21" column="0" colspan="6">
-      <widget class="Line" name="line_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="12" column="2">
-      <widget class="PyDMByteIndicator" name="ind_BC11BL">
-       <property name="minimumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML00:AO856</string>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="shift" stdset="0">
-        <number>3</number>
-       </property>
-      </widget>
-     </item>
-     <item row="26" column="1">
-      <spacer name="verticalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="22" column="5">
-      <widget class="QLabel" name="label_26">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>21</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-         <weight>75</weight>
-         <italic>true</italic>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>E</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3" rowspan="4" colspan="2">
+     <item row="2" column="5" rowspan="5" colspan="2">
       <widget class="PyDMWaveformPlot" name="plot_DL10">
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>120</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>120</height>
+         <height>140</height>
         </size>
        </property>
        <property name="toolTip">
@@ -2841,236 +3015,53 @@ color: rgb(255,255,255);
        </property>
       </widget>
      </item>
-     <item row="20" column="1">
-      <spacer name="verticalSpacer_4">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="19" column="2">
-      <widget class="PyDMByteIndicator" name="ind_BC14BL">
+     <item row="11" column="5" rowspan="7" colspan="2">
+      <widget class="PyDMWaveformPlot" name="plot_BC11">
        <property name="minimumSize">
         <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
+         <width>0</width>
+         <height>140</height>
         </size>
        </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML00:AO856</string>
+       <property name="yAxes">
+        <stringlist>
+         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+        </stringlist>
        </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
+       <property name="mouseEnabledX" stdset="0">
         <bool>false</bool>
        </property>
-       <property name="shift" stdset="0">
-        <number>5</number>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="0">
-      <widget class="QLabel" name="label_17">
-       <property name="maximumSize">
-        <size>
-         <width>90</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>BC11 Energy</string>
-       </property>
-      </widget>
-     </item>
-     <item row="10" column="1">
-      <widget class="QWidget" name="cont_BC11E" native="true">
-       <property name="minimumSize">
-        <size>
-         <width>110</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-background-color: rgba(255, 255, 255, 0);
-}
-PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-      </widget>
-     </item>
-     <item row="25" column="2">
-      <widget class="PyDMByteIndicator" name="ind_BC20E">
-       <property name="minimumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML00:AO856</string>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
+       <property name="mouseEnabledY" stdset="0">
         <bool>false</bool>
        </property>
-       <property name="shift" stdset="0">
-        <number>4</number>
+       <property name="maxRedrawRate" stdset="0">
+        <number>10</number>
        </property>
-      </widget>
-     </item>
-     <item row="10" column="2">
-      <widget class="PyDMByteIndicator" name="ind_BC11E">
-       <property name="minimumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
+       <property name="curves">
+        <stringlist>
+         <string>{&quot;y_channel&quot;: &quot;BPMS:LI11:333:XHSTBRDSP&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
        </property>
-       <property name="maximumSize">
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML00:AO856</string>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>0</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
+       <property name="autoRangeX">
         <bool>false</bool>
        </property>
-       <property name="shift" stdset="0">
-        <number>2</number>
+       <property name="minXRange">
+        <double>1800.000000000000000</double>
        </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <spacer name="verticalSpacer">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
+       <property name="maxXRange">
+        <double>2800.000000000000000</double>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
+       <property name="autoRangeY">
+        <bool>false</bool>
        </property>
-      </spacer>
-     </item>
-     <item row="8" column="5">
-      <widget class="QLabel" name="label_24">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>16777215</height>
-        </size>
+       <property name="minYRange">
+        <double>-2.200000000000000</double>
        </property>
-       <property name="font">
-        <font>
-         <pointsize>11</pointsize>
-         <weight>75</weight>
-         <italic>true</italic>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>E</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="25" column="5" rowspan="2">
-      <widget class="PyDMDrawingLine" name="PyDMDrawingLine_4">
-       <property name="maximumSize">
-        <size>
-         <width>15</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-       </property>
-       <property name="brush" stdset="0">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </brush>
-       </property>
-       <property name="penColor" stdset="0">
-        <color>
-         <red>255</red>
-         <green>255</green>
-         <blue>255</blue>
-        </color>
-       </property>
-       <property name="rotation" stdset="0">
-        <double>90.000000000000000</double>
-       </property>
-       <property name="arrowEndPoint" stdset="0">
-        <bool>true</bool>
+       <property name="maxYRange">
+        <double>2.200000000000000</double>
        </property>
       </widget>
      </item>
@@ -4089,6 +4080,307 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
     </layout>
    </widget>
   </widget>
+  <widget class="PyDMLabel" name="PyDMLabel_7">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>290</y>
+     <width>76</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>-00.0 mm</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="precision" stdset="0">
+    <number>1</number>
+   </property>
+   <property name="showUnits" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="precisionFromPV" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alarmSensitiveBorder" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string>BPMS:IN10:731:X1H</string>
+   </property>
+  </widget>
+  <widget class="PyDMLabel" name="PyDMLabel_8">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>445</y>
+     <width>76</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>-00.0 mm</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="precision" stdset="0">
+    <number>1</number>
+   </property>
+   <property name="showUnits" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="precisionFromPV" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alarmSensitiveBorder" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string>BPMS:LI11:333:X1H</string>
+   </property>
+  </widget>
+  <widget class="PyDMLabel" name="PyDMLabel_9">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>595</y>
+     <width>76</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>-00.0 mm</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="precision" stdset="0">
+    <number>1</number>
+   </property>
+   <property name="showUnits" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="precisionFromPV" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alarmSensitiveContent" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alarmSensitiveBorder" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="PyDMToolTip" stdset="0">
+    <string/>
+   </property>
+   <property name="channel" stdset="0">
+    <string>BPMS:LI14:801:X1H</string>
+   </property>
+   <property name="enableRichText" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="PyDMLabel" name="PyDMLabel_10">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>750</y>
+     <width>76</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>-00.0 mm</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="precision" stdset="0">
+    <number>1</number>
+   </property>
+   <property name="showUnits" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="precisionFromPV" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alarmSensitiveBorder" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string>BPMS:LI20:2445:X1H</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>750</y>
+     <width>90</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0,0,0,255);</string>
+   </property>
+   <property name="text">
+    <string>M1E X</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_27">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>595</y>
+     <width>90</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0,0,0,255);</string>
+   </property>
+   <property name="text">
+    <string>BPM14801 X</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_28">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>445</y>
+     <width>90</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0,0,0,255);</string>
+   </property>
+   <property name="text">
+    <string>BPM11333 X</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_29">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>290</y>
+     <width>90</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0,0,0,255);</string>
+   </property>
+   <property name="text">
+    <string>BPM10731 X</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -4102,17 +4394,7 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
    <header>pydm.widgets.waveformplot</header>
   </customwidget>
   <customwidget>
-   <class>PyDMByteIndicator</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.byte</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingLine</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
   </customwidget>
@@ -4120,6 +4402,11 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
    <class>PyDMShellCommand</class>
