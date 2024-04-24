@@ -18,6 +18,10 @@ from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtGui import QColor, QFont
 
 SELF_PATH = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.join(*os.path.split(SELF_PATH)[:-1])
+sys.path.append(REPO_ROOT)
+
+from F2_pytools.widgets import SCPSteeringToggleButton
 
 FONT_CTRL_REG  = STAT_BOLD = QFont('Sans Serif', 10)
 FONT_CTRL_BOLD = STAT_BOLD = QFont('Sans Serif', 10, QFont.Bold)
@@ -126,14 +130,10 @@ class F2_dashboard(Display):
             ]:
             plot.hideAxis('bottom')
 
-        ind_LI11 = F2SteeringFeedbackIndicator(
-            'LI11:FBCK:26:HSTA', parent=self.ui.cont_LI11FB
-            )
-        ind_LI18 = F2SteeringFeedbackIndicator(
-            'LI18:FBCK:28:HSTA', parent=self.ui.cont_LI18FB
-            )
-        ind_LI11.setGeometry(0,0,92,26)
-        ind_LI18.setGeometry(0,0,92,26)
+        ctl_LI11 = SCPSteeringToggleButton(micro='LI11', parent=self.ui.cont_LI11FB)
+        ctl_LI18 = SCPSteeringToggleButton(micro='LI18', parent=self.ui.cont_LI18FB)
+        ctl_LI11.setGeometry(0,0,92,26)
+        ctl_LI18.setGeometry(0,0,92,26)
 
         if gethostname() not in ACR_WORKSTATIONS:
             self.ui.start_matlab_server.setEnabled(False)
@@ -173,7 +173,6 @@ class F2FeedbackToggle(QFrame):
         self.bit = bit_ID
         self.toggle_on = QPushButton('ON')
         self.toggle_off = QPushButton('OFF')
-        self.status = PyDMByteIndicator()
 
         self.setStyleSheet(STYLE_BRD_GREEN)
 
@@ -219,3 +218,4 @@ class F2FeedbackToggle(QFrame):
         self.toggle_off.setDown(not feedback_on)
         self.toggle_off.setEnabled(feedback_on)
         self.toggle_off.setStyleSheet(off_style)
+

@@ -3979,7 +3979,20 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
       </widget>
      </item>
      <item row="7" column="1">
-      <widget class="QWidget" name="cont_LI18FB" native="true"/>
+      <widget class="QWidget" name="cont_LI18FB" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
      </item>
      <item row="4" column="1">
       <widget class="PyDMLabel" name="PyDMLabel_20">
@@ -4149,7 +4162,20 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
       </widget>
      </item>
      <item row="6" column="1">
-      <widget class="QWidget" name="cont_LI11FB" native="true"/>
+      <widget class="QWidget" name="cont_LI11FB" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
