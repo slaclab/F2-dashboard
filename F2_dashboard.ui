@@ -1659,7 +1659,7 @@ color: rgb(255,255,255);
          <string>/usr/local/facet/tools/matlabTNG/applauncher_client.sh F2_Orbit</string>
          <string>/usr/local/facet/tools/matlabTNG/applauncher_client.sh F2_Feedback</string>
          <string>/usr/local/facet/tools/matlabTNG/applauncher_client.sh F2_SchottkyScan</string>
-         <string>xterm -icon -T &quot;Phase Scan GUI xterm&quot; -e run_matlab.bash -m 2020a -r facet_phase_scans</string>
+         <string>/usr/local/facet/tools/matlabTNG/applauncher_client.sh F2_phasing</string>
          <string>/usr/local/facet/tools/matlabTNG/applauncher_client.sh F2_S20Config</string>
          <string>edm -x /usr/local/facet/tools/edm/display/misc/facet_matlab_gui.edl</string>
         </stringlist>
