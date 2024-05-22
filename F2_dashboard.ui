@@ -1818,7 +1818,7 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
        </property>
        <property name="yAxes">
         <stringlist>
-         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -2.2, &quot;maxRange&quot;: 2.2, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
         </stringlist>
        </property>
        <property name="mouseEnabledX" stdset="0">
@@ -1868,7 +1868,7 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
        </property>
        <property name="yAxes">
         <stringlist>
-         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -4.4, &quot;maxRange&quot;: 4.4, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
         </stringlist>
        </property>
        <property name="mouseEnabledX" stdset="0">
@@ -2461,7 +2461,7 @@ color: rgb(255,255,255);
        </property>
        <property name="yAxes">
         <stringlist>
-         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -4.4, &quot;maxRange&quot;: 4.4, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
         </stringlist>
        </property>
        <property name="mouseEnabledX" stdset="0">
@@ -2803,7 +2803,7 @@ color: rgb(255,255,255);</string>
        </property>
        <property name="yAxes">
         <stringlist>
-         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;right&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.1, &quot;maxRange&quot;: 1.1, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
         </stringlist>
        </property>
        <property name="mouseEnabledX" stdset="0">
@@ -3145,7 +3145,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <property name="geometry">
      <rect>
       <x>15</x>
-      <y>455</y>
+      <y>470</y>
       <width>200</width>
       <height>320</height>
      </rect>
@@ -3614,6 +3614,9 @@ color: rgb(255,255,255);
        <property name="toolTip">
         <string/>
        </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
@@ -3896,7 +3899,7 @@ color: rgb(255,255,255);
       <x>15</x>
       <y>220</y>
       <width>200</width>
-      <height>226</height>
+      <height>240</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -3963,59 +3966,6 @@ PyDMLabel[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
      <property name="spacing">
       <number>5</number>
      </property>
-     <item row="6" column="0">
-      <widget class="QLabel" name="label_36">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>L2 Steering</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QWidget" name="cont_LI18FB" native="true">
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-background-color: rgba(255, 255, 255, 0);
-}
-PyDMEnumButton{
-background-color: rgb(20,20,30);
-}
-QPushButton {
-background-color: rgb(40,40,50);
-color: rgb(255,255,255);
-}</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_20">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="precision" stdset="0">
-        <number>1</number>
-       </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>LASR:LT10:150:LASER_PWR_READBACK</string>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_39">
        <property name="font">
@@ -4028,31 +3978,6 @@ color: rgb(255,255,255);
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_50">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Charge FB</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_16">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML03:AO502</string>
        </property>
       </widget>
      </item>
@@ -4069,15 +3994,15 @@ color: rgb(255,255,255);
        </property>
       </widget>
      </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="label_53">
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_36">
        <property name="font">
         <font>
          <pointsize>10</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>L3 Steering</string>
+        <string>L2 Steering</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -4111,16 +4036,19 @@ color: rgb(255,255,255);
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMLabel" name="PyDMLabel_22">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="channel" stdset="0">
-        <string>F2:WATCHER:MDLFF_STAT</string>
+     <item row="9" column="1">
+      <widget class="QWidget" name="cont_LI18FB" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color: rgba(255, 255, 255, 0);
+}
+PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
        </property>
       </widget>
      </item>
@@ -4151,6 +4079,163 @@ color: rgb(255,255,255);
        </property>
       </widget>
      </item>
+     <item row="2" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_22">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string>F2:WATCHER:MDLFF_STAT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="PyDMFrame" name="GlobalOnOffFrame">
+       <property name="maximumSize">
+        <size>
+         <width>92</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Global On/Off control!</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">PyDMFrame[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;0&quot;] {
+  color: rgb(80,200,120);
+  border-color: rgb(80,255,120);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0px;
+}
+
+PyDMFrame[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;1&quot;] {
+  color: rgb(192,192,0);
+  border-color: rgb(255,255,0);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0px;
+}
+
+PyDMFrame[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;2&quot;] {
+  color: rgb(255,69,58);
+  border-color: rgb(255,0,0);
+  border-width: 3px;
+  border-style: double;
+  border-radius: 0px;
+}
+
+PyDMFrame[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;3&quot;] {
+  color: rgb(160,50,200);
+  border-color: rgb(192,0,255);
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: 0px;
+}
+
+PyDMFrame[alarmSensitiveBorder=&quot;true&quot;][alarmSeverity=&quot;4&quot;] {
+  color: rgb(218,218,218);
+  border-color: rgb(218,218,218);
+  border-width: 3px;
+  border-style: dashed;
+  border-radius: 0px;
+}</string>
+       </property>
+       <property name="rules" stdset="0">
+        <string>[]</string>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://SIOC:SYS1:ML03:AO502</string>
+       </property>
+       <property name="disableOnDisconnect" stdset="0">
+        <bool>false</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="PyDMEnumButton" name="OnOffButton">
+          <property name="toolTip">
+           <string>Global On/Off control! In Off, the feedback won't actuate</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">PyDMEnumButton{
+background-color: rgb(20,20,30);
+}
+QPushButton {
+background-color: rgb(40,40,50);
+color: rgb(255,255,255);
+}</string>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://SIOC:SYS1:ML03:AO502</string>
+          </property>
+          <property name="items" stdset="0">
+           <stringlist>
+            <string>OFF</string>
+            <string>ON</string>
+           </stringlist>
+          </property>
+          <property name="invertOrder" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="orientation" stdset="0">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="marginTop" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="marginBottom" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="marginLeft" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="marginRight" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="horizontalSpacing" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="verticalSpacing" stdset="0">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
      <item row="1" column="0" colspan="2">
       <widget class="Line" name="line_7">
        <property name="frameShadow">
@@ -4161,7 +4246,44 @@ color: rgb(255,255,255);
        </property>
       </widget>
      </item>
-     <item row="6" column="1">
+     <item row="4" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_20">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>LASR:LT10:150:LASER_PWR_READBACK</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_53">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>L3 Steering</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
       <widget class="QWidget" name="cont_LI11FB" native="true">
        <property name="styleSheet">
         <string notr="true">QWidget{
@@ -4174,6 +4296,18 @@ QPushButton {
 background-color: rgb(40,40,50);
 color: rgb(255,255,255);
 }</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_50">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Charge FB</string>
        </property>
       </widget>
      </item>
@@ -4507,6 +4641,12 @@ background-color: rgba(0,0,0,255);</string>
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMFrame</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.frame</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>PyDMLineEdit</class>
