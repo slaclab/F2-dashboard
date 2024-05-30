@@ -2281,7 +2281,7 @@ color: rgb(255,255,255);</string>
         <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>SIOC:SYS1:ML01:AO221</string>
+        <string>SIOC:SYS1:ML01:AO207</string>
        </property>
       </widget>
      </item>
